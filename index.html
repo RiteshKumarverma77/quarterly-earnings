@@ -5,57 +5,58 @@
   <title>Quarterly Earnings Presentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- RevealJS -->
+  <!-- Reveal.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css">
 
-  <!-- Highlight.js (syntax highlighting) -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" />
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
   <!-- MathJax -->
   <script>
-      window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-        svg: { fontCache: 'global' }
-      };
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
 </head>
 
 <body>
   <div class="reveal">
     <div class="slides">
 
-      <!-- MARKDOWN START -->
+      <!-- SLIDE 1 -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p><strong>By Technical Consultant</strong></p>
+        <p>Email: <strong>23f1002899@ds.study.iitm.ac.in</strong></p>
+
+        <aside class="notes">
+          Introduce yourself and explain the purpose of the report.
+        </aside>
+      </section>
+
+      <!-- SLIDE 2 (MARKDOWN) -->
       <section data-markdown>
         <script type="text/template">
-
-# Quarterly Earnings Report  
-**By Technical Consultant**  
-Email: **23f1002899@ds.study.iitm.ac.in**
-
-<aside class="notes">
-Introduce yourself and the purpose of the quarterly earnings report.
-</aside>
-
----
-
 ## Markdown Slide
 
 - Revenue: ₹10.3 Cr  
 - Profit: ₹2.1 Cr  
 - EPS: 13.4  
 - YoY Growth: 11%
+        </script>
+      </section>
 
-<aside class="notes">
-Highlight revenue growth and profit margin improvements.
-</aside>
+      <aside class="notes">
+        Highlight revenue and profit growth numbers.
+      </aside>
 
----
-
+      <!-- SLIDE 3 -->
+      <section data-markdown>
+        <script type="text/template">
 ## Financial Math
 
 \[
@@ -65,29 +66,35 @@ ROE = \frac{Net\ Income}{Shareholder\ Equity}
 \[
 NPV = \sum_{t=0}^{T} \frac{C_t}{(1+r)^t}
 \]
+        </script>
+      </section>
 
-<aside class="notes">
-Explain ROE and NPV formulas with examples.
-</aside>
+      <aside class="notes">
+        Explain ROE and NPV formulas clearly.
+      </aside>
 
----
-
+      <!-- SLIDE 4 -->
+      <section data-markdown>
+        <script type="text/template">
 ## Fragment Animation
 
 - Revenue Growth <span class="fragment">+11%</span>  
 - Cost Reduction <span class="fragment">–4%</span>  
 - EPS Increase <span class="fragment">+7%</span>
+        </script>
+      </section>
 
-<aside class="notes">
-Reveal each metric gradually to maintain audience focus.
-</aside>
+      <aside class="notes">
+        Use fragments to reveal each point one-by-one.
+      </aside>
 
----
-
-## Syntax Highlighted Code Block (REQUIRED)
+      <!-- SLIDE 5 -->
+      <section data-markdown>
+        <script type="text/template">
+## Syntax Highlighted Code Block (Required)
 
 ```python
-# Financial Formula Example (ROI)
+# ROI Example
 def calculate_roi(gain, cost):
     return (gain - cost) / cost
 
