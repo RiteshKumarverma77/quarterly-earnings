@@ -2,80 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Quarterly Earnings — Reveal.js</title>
+  <title>Quarterly Earnings Presentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Reveal.js (CDN) -->
+  <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
 
-  <!-- Highlight.js for code syntax highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/default.min.css">
+  <!-- Highlight.js (Syntax Highlighting) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
-  <style>
-    /* small custom tweaks */
-    .email { font-size: 0.9rem; opacity: 0.9; }
-  </style>
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
-      <!-- Markdown slide deck embedded inline -->
+
+      <!-- MARKDOWN SLIDES -->
       <section data-markdown>
         <script type="text/template">
-## Quarterly Earnings Report — Q[XX] 20YY
 
-**Presented by:** Technical Consulting Team  
-**Contact:** <span class="email">23f1002899@ds.study.iitm.ac.in</span>
-
---- 
-## Highlights (Key Metrics)
-
-- Revenue: **₹ X.XX Bn**.  
-- YoY Growth: **+Y%**.  
-- EPS: **₹ Z.ZZ**.
+# Quarterly Earnings Report  
+**By Technical Consultant**  
+Email: **23f1002899@ds.study.iitm.ac.in**
 
 <aside class="notes">
-High level summary — call out top-line revenue and EPS, mention YoY growth and any variance drivers.
+Welcome stakeholders. This presentation summarizes the key quarterly financial performance.
 </aside>
 
 ---
-## Financial Formula — Return on Equity (ROE)
 
-ROE is given by:
+## Financial Highlights (Markdown Slide)
+
+- Revenue Growth: **12% YoY**
+- Net Profit: **₹ 2.3 Crore**
+- EPS: **₹ 14.5**
+- Cash Flow: **Stable**
+
+<aside class="notes">
+Explain high-level metrics here.
+</aside>
+
+---
+
+## Financial Formula Example
 
 \[
-\text{ROE} = \frac{\text{Net Income}}{\text{Shareholders' Equity}} = \frac{NI}{SE}
+ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}}
 \]
-
-And Dupont decomposition:
 
 \[
-\text{ROE} = \text{Net Profit Margin} \times \text{Asset Turnover} \times \text{Equity Multiplier}
+NPV = \sum_{t=0}^{T} \frac{C_t}{(1+r)^t}
 \]
 
 <aside class="notes">
-Explain Dupont: how margin, turnover and leverage contribute to return on equity.
+Talk through ROE and NPV with examples.
 </aside>
 
 ---
-## Fragmented Talking Points
-- Market dynamics. <span class="fragment">Interest rate impacts</span> <span class="fragment">Currency volatility</span>
-- Operational efficiency. <span class="fragment">Cost of funds</span> <span class="fragment">Process automation</span>
+
+## Step-by-Step Reveal Using Fragments
+
+- Revenue increased by 12% <span class="fragment">due to strong sales</span>  
+- Profit margin improved <span class="fragment">due to cost optimization</span>  
+- EPS rose <span class="fragment">reflecting better performance</span>
 
 <aside class="notes">
-Click to reveal each fragment bullet during presentation for emphasis.
+Fragments help reveal points slowly.
 </aside>
 
 ---
-## Code sample — data snippet (Python)
+
+## Syntax Highlighted Code Block (Required)
+
 ```python
-# compute ROE and CAGR example
-def roe(net_income, shareholders_equity):
-    return net_income / shareholders_equity
+# Example financial calculation
+def calculate_roi(gain, cost):
+    return (gain - cost) / cost
 
-def cagr(begin, end, years):
-    return (end / begin) ** (1/years) - 1
-
-print("ROE:", roe(120_000_000, 1_200_000_000))  # example values
-print("CAGR:", cagr(800_000_000, 1_100_000_000, 3))
+print("ROI:", calculate_roi(150000, 100000))
