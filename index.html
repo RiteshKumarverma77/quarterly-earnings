@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings — Reveal.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/solarized.css" id="theme">
+
+  <!-- Highlight.js for code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/default.min.css">
+
+  <style>
+    /* small custom tweaks */
+    .email { font-size: 0.9rem; opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Markdown slide deck embedded inline -->
+      <section data-markdown>
+        <script type="text/template">
+## Quarterly Earnings Report — Q[XX] 20YY
+
+**Presented by:** Technical Consulting Team  
+**Contact:** <span class="email">23f1002899@ds.study.iitm.ac.in</span>
+
+--- 
+## Highlights (Key Metrics)
+
+- Revenue: **₹ X.XX Bn**.  
+- YoY Growth: **+Y%**.  
+- EPS: **₹ Z.ZZ**.
+
+<aside class="notes">
+High level summary — call out top-line revenue and EPS, mention YoY growth and any variance drivers.
+</aside>
+
+---
+## Financial Formula — Return on Equity (ROE)
+
+ROE is given by:
+
+\[
+\text{ROE} = \frac{\text{Net Income}}{\text{Shareholders' Equity}} = \frac{NI}{SE}
+\]
+
+And Dupont decomposition:
+
+\[
+\text{ROE} = \text{Net Profit Margin} \times \text{Asset Turnover} \times \text{Equity Multiplier}
+\]
+
+<aside class="notes">
+Explain Dupont: how margin, turnover and leverage contribute to return on equity.
+</aside>
+
+---
+## Fragmented Talking Points
+- Market dynamics. <span class="fragment">Interest rate impacts</span> <span class="fragment">Currency volatility</span>
+- Operational efficiency. <span class="fragment">Cost of funds</span> <span class="fragment">Process automation</span>
+
+<aside class="notes">
+Click to reveal each fragment bullet during presentation for emphasis.
+</aside>
+
+---
+## Code sample — data snippet (Python)
+```python
+# compute ROE and CAGR example
+def roe(net_income, shareholders_equity):
+    return net_income / shareholders_equity
+
+def cagr(begin, end, years):
+    return (end / begin) ** (1/years) - 1
+
+print("ROE:", roe(120_000_000, 1_200_000_000))  # example values
+print("CAGR:", cagr(800_000_000, 1_100_000_000, 3))
