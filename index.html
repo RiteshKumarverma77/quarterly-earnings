@@ -5,29 +5,31 @@
   <title>Quarterly Earnings Presentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Reveal.js CSS -->
+  <!-- RevealJS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css">
 
-  <!-- Highlight.js (Syntax Highlighting) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <!-- Highlight.js (syntax highlighting) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
   <!-- MathJax -->
   <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      svg: { fontCache: 'global' }
-    };
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        svg: { fontCache: 'global' }
+      };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
 </head>
 
 <body>
   <div class="reveal">
     <div class="slides">
 
-      <!-- MARKDOWN SLIDES -->
+      <!-- MARKDOWN START -->
       <section data-markdown>
         <script type="text/template">
 
@@ -36,28 +38,28 @@
 Email: **23f1002899@ds.study.iitm.ac.in**
 
 <aside class="notes">
-Welcome stakeholders. This presentation summarizes the key quarterly financial performance.
+Introduce yourself and the purpose of the quarterly earnings report.
 </aside>
 
 ---
 
-## Financial Highlights (Markdown Slide)
+## Markdown Slide
 
-- Revenue Growth: **12% YoY**
-- Net Profit: **₹ 2.3 Crore**
-- EPS: **₹ 14.5**
-- Cash Flow: **Stable**
+- Revenue: ₹10.3 Cr  
+- Profit: ₹2.1 Cr  
+- EPS: 13.4  
+- YoY Growth: 11%
 
 <aside class="notes">
-Explain high-level metrics here.
+Highlight revenue growth and profit margin improvements.
 </aside>
 
 ---
 
-## Financial Formula Example
+## Financial Math
 
 \[
-ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}}
+ROE = \frac{Net\ Income}{Shareholder\ Equity}
 \]
 
 \[
@@ -65,27 +67,27 @@ NPV = \sum_{t=0}^{T} \frac{C_t}{(1+r)^t}
 \]
 
 <aside class="notes">
-Talk through ROE and NPV with examples.
+Explain ROE and NPV formulas with examples.
 </aside>
 
 ---
 
-## Step-by-Step Reveal Using Fragments
+## Fragment Animation
 
-- Revenue increased by 12% <span class="fragment">due to strong sales</span>  
-- Profit margin improved <span class="fragment">due to cost optimization</span>  
-- EPS rose <span class="fragment">reflecting better performance</span>
+- Revenue Growth <span class="fragment">+11%</span>  
+- Cost Reduction <span class="fragment">–4%</span>  
+- EPS Increase <span class="fragment">+7%</span>
 
 <aside class="notes">
-Fragments help reveal points slowly.
+Reveal each metric gradually to maintain audience focus.
 </aside>
 
 ---
 
-## Syntax Highlighted Code Block (Required)
+## Syntax Highlighted Code Block (REQUIRED)
 
 ```python
-# Example financial calculation
+# Financial Formula Example (ROI)
 def calculate_roi(gain, cost):
     return (gain - cost) / cost
 
